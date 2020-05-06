@@ -19,8 +19,13 @@ fecha: new Date ('1995/08/13'),
 
 console.log(json.nombre)
 console.log(json['edad'])
+
+json.nombre = 'nuevo'
  
 json.direccion = 'XD'
+
+console.log(json)
+
 delete json.direccion
 
 console.log(json)
