@@ -1,3 +1,14 @@
+// JSON -> JAVASCRIPT OBJECT NOTATION 
+/* JSON 
+LIGERO, INTERCAMBIA DATOS, FACIL ESCRITURA Y LECTURA
+{
+    NOMBRE: {
+        }
+    }
+}
+*/
+// TIPO DE DATOS (NUMBER), STRING, BOOL 
+// VAR - CONST 
 var json = {
 nombre:'Jean Pierre',
 edad:'24',
@@ -13,3 +24,9 @@ json.direccion = 'XD'
 delete json.direccion
 
 console.log(json)
+
+/*
+console.error()
+console.info()
+console.warn()
+*/
