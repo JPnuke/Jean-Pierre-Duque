@@ -49,7 +49,6 @@ var operadoresMapyFilter = uno
         }
     )
 
-
 var dos = [
     { valor: 1 },
     { valor: 4 },
@@ -77,7 +76,7 @@ var suma = dos
         }
     )
 
-    var operadoresFilteryMap = dos
+var operadoresFilteryMap = dos
     .filter(
         (item) => {
             if (item.valor % 2 != 0) {
