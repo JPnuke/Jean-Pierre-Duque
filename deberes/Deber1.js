@@ -1,5 +1,5 @@
 /* arreglo uno, multiplique * 2, y me filtrar los pares, usar map y filter
-arreglo dos, filter los impares , sumar + 2*/
+arreglo dos, filter los impares , sumar + 2
 var json =
 {
     arreglos: {
@@ -16,7 +16,7 @@ var json =
         ],
     }
 };
-
+*/
 var uno = [2, 4, 5, 8, 6, 9, 10];
 
 var multiplicacion = uno
