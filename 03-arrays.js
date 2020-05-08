@@ -22,9 +22,9 @@ var arregloSlice = arregloNumero.slice(0, 1)
 
 //console.log(arregloNumero.pop())
 //console.log(arregloNumero)
-
+/*
 var arreglo2 = [1, 2, 3, 4];
-/*arreglo2
+arreglo2
     .forEach(
         function (item, indice, arreglo) {
             console.log('item: ' + item);
@@ -70,7 +70,7 @@ console.log(arregloFilter);*/
 // true, false
 // some => verifica si almenos uno cumplen una condicion 
 
-
+/*
 var operadoresMapyFilter = arreglo2
     .map(
         (item) => {
@@ -82,7 +82,7 @@ var operadoresMapyFilter = arreglo2
         }
     )
 
-// arreglo uno, multiplique * 2, y me filtrar los pares, usar map y filter
+/* arreglo uno, multiplique * 2, y me filtrar los pares, usar map y filter
 // arreglo dos, filter los los impares , sumar + 2
 
 var a = {
@@ -99,5 +99,17 @@ var a = {
             {valor: 23}
         ],
     }
-
 }
+*/
+
+var arregloReduce = [2, 1, 11, 3, 45]
+
+var valorSumaArreglo = arregloReduce
+    .reduce(
+        (acumulador, item, indice, arreglo) => {
+            return acumulador + item
+        }, 0
+    )
+    console.log(valorSumaArreglo)
+
+    
