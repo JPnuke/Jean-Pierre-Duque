@@ -56,7 +56,7 @@ console.log(arregloMutado);*/
     )
 console.log(arregloFilter);*/
 
-// find => retorn un valor
+// find => retorna un valor
 /*var valorFind = arreglo2
     .find(
         (item, indice, arreglo) => {
@@ -66,9 +66,9 @@ console.log(arregloFilter);*/
     console.log(valorFind);*/
 
 // every y some
-// every verifica si todo los valores cumplen una condicion 
+// every => verifica si todo los valores cumplen una condicion 
 // true, false
-// some verifica si almenos uno cumplen una condicion 
+// some => verifica si almenos uno cumplen una condicion 
 
 
 var operadoresMapyFilter = arreglo2
