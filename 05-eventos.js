@@ -1,3 +1,4 @@
+// JavaScript Document
 const EventEmitter = require('events')
 
 class entrarALaCasa extends EventEmitter { }

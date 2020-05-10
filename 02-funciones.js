@@ -1,3 +1,4 @@
+// JavaScript Document
 function saludar() {
     return 'hola'
 }

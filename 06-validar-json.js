@@ -1,3 +1,4 @@
+// JavaScript Document
 const Joi = require('joi')
 
 
