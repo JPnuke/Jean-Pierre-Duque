@@ -1,5 +1,7 @@
+// JavaScript Document
+
 /* arreglo uno, multiplique * 2, y me filtrar los pares, usar map y filter
-arreglo dos, filter los impares , sumar + 2*/
+arreglo dos, filter los impares , sumar + 2
 var json =
 {
     arreglos: {
@@ -16,8 +18,13 @@ var json =
         ],
     }
 };
+*/
 
 var uno = [2, 4, 5, 8, 6, 9, 10];
+
+console.log('Arreglo1 ');
+console.log(uno);
+console.log(' ');
 
 var multiplicacion = uno
     .map(
@@ -25,6 +32,10 @@ var multiplicacion = uno
             return item * 2;
         }
     )
+
+console.log('Arreglo1 * 2');
+console.log(multiplicacion);
+console.log(' ');
 
 var pares = uno
     .filter(
@@ -34,6 +45,10 @@ var pares = uno
             }
         }
     )
+
+console.log('Arreglo1 valores pares');
+console.log(pares);
+console.log(' ');
 
 var operadoresMapyFilter = uno
     .map(
@@ -49,6 +64,10 @@ var operadoresMapyFilter = uno
         }
     )
 
+console.log('Map y filter Arreglo1 ');
+console.log(operadoresMapyFilter);
+console.log(' ');
+
 var dos = [
     { valor: 1 },
     { valor: 4 },
@@ -60,6 +79,10 @@ var dos = [
     { valor: 23 }
 ];
 
+console.log('Arreglo2 ');
+console.log(dos);
+console.log(' ');
+
 var impar = dos
     .filter(
         (item) => {
@@ -69,12 +92,20 @@ var impar = dos
         }
     )
 
+console.log('Arreglo2 valores impares');
+console.log(impar);
+console.log(' ');
+
 var suma = dos
     .map(
         (item) => {
             return item.valor + 2;
         }
     )
+
+console.log('Arreglo2 + 2');
+console.log(suma);
+console.log(' ');
 
 var operadoresFilteryMap = dos
     .filter(
@@ -90,26 +121,5 @@ var operadoresFilteryMap = dos
         }
     )
 
-console.log('Arreglo1 ');
-console.log(uno);
-console.log('*************************************************************');
-console.log('Arreglo1 * 2');
-console.log(multiplicacion);
-console.log('*************************************************************');
-console.log('Arreglo1 valores pares');
-console.log(pares);
-console.log('*************************************************************');
-console.log('Map y filter Arreglo1 ');
-console.log(operadoresMapyFilter);
-console.log('*************************************************************');
-console.log('Arreglo2 ');
-console.log(dos);
-console.log('*************************************************************');
-console.log('Arreglo2 valores impares');
-console.log(impar);
-console.log('*************************************************************');
-console.log('Arreglo2 + 2');
-console.log(suma);
-console.log('*************************************************************');
 console.log('Filter y Map Arreglo2');
-console.log(operadoresFilteryMap); 
+console.log(operadoresFilteryMap);
