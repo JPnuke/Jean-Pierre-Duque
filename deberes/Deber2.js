@@ -56,7 +56,7 @@ console.log(PPcadena.toUpperCase());
 
 function palabraMitad(cadena) {
 	var palabras = cadena.split(" ");
-	var Cpalabras = Math.round(palabras.length / 2); // 
+	var Cpalabras = Math.round((palabras.length - 1) / 2); // 
 	var separador = " ";
 	var limite = Cpalabras;
 	var arregloDeSubCadena = cadena.split(separador, limite);
