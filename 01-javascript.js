@@ -4,26 +4,26 @@
 LIGERO, INTERCAMBIA DATOS, FACIL ESCRITURA Y LECTURA
 {
     NOMBRE: {
+        KE:{
         }
     }
 }
 */
 // TIPO DE DATOS (NUMBER), STRING, BOOL 
-// VAR - CONST 
+// VAR - CONST -> 
 var json = {
-nombre:'Jean Pierre',
-edad:'24',
-soltero:true,
-fecha: new Date ('1995/08/13'),
-
+    nombre: 'kevin',
+    edad: 25,
+    soltero: true,
+    fecha: new Date('1995/02/24'),
 }
 
 console.log(json.nombre)
 console.log(json['edad'])
 
 json.nombre = 'nuevo'
- 
-json.direccion = 'XD'
+
+json.direccion = 'solanda'
 
 console.log(json)
 
@@ -36,49 +36,50 @@ console.error()
 console.info()
 console.warn()
 */
-var json2={
-    nombre:'Jean Pierre',
-edad:'24',
-soltero:true,
-fecha: new Date ('1995/08/13'),
-interese: {
-    hobbies: [
-        'futbol',
-        'ps4'
-    ],
-    peliculas: [
+
+var json2 = {
+    nombre: 'Jean',
+    edad: 24,
+    soltero: true,
+    fecha: new Date('1995/08/13'),
+    interese: {
+        hobbies: [
+            'futbol',
+            'ps4'
+        ],
+        peliculas: [
+            {
+                nombre: '',
+                tipo: '',
+                esBuena: true,
+            },
+            {
+                nombre: '',
+                tipo: '',
+                esBuena: true,
+            }
+        ]
+    },
+    familia: [
         {
             nombre: '',
-            tipo: '',
-            esBuena: true,
+            edad: 1,
         },
         {
             nombre: '',
-            tipo: '',
-            esBuena: true,
+            edad: 1,
         }
     ]
-},
-familia: [
-    {
-        nombre: 'Padre',
-        edad: 1,
-    },
-    {
-        nombre: 'Madre',
-        edad: 1,
-    }
-]
 }
 
-
-// stringify =  todo a  string
+// stringify
 
 var json2String = JSON.stringify(json2)
 console.log(json2)
-console.log(jsonString)
+console.log(json2String)
 
-//parce 
-var jsonParce = JSON.parse(jsonString)
+// Parse
+
+var jsonParse = JSON.parse(json2String)
 console.log(jsonParse)
 
