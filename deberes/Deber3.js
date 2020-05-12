@@ -38,8 +38,8 @@ function anadirUsuarios(arreglo, nombre, edad, fnacimiento, telefono, cb) {
         }
     )
 }
-var indice = json.arreglo.usuario.indexOf(nombreNuevo);
-if (indice !== -1) {
+var index = json.arreglo.usuario.indexOf(nombreNuevo);
+if (index !== -1) {
     console.log('Este usuario ya existe');
 } else {
     anadirUsuarios(json.arreglo.usuario, nombreNuevo, edadNuevo, fNacimientoNuevo, telefonoNuevo, (mensaje) => {
