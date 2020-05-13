@@ -2,13 +2,13 @@
 const nombre: string = "Jean";
 const numero: number = 1;
 const Bool: boolean = true;
-const objetoUsuario: object={
-    nombre:'jean',
+const objetoUsuario: object = {
+    nombre: 'jean',
 }
 
 //arreglos
-const arregloUno: Array<number> =[];
-const arregloDos : object [] =[];
+const arregloUno: Array<number> = [];
+const arregloDos: object[] = [];
 
 // vaios tipados
 
@@ -64,5 +64,41 @@ class hijo extends Persona {
     }
 }
 
-const hijoPersona = new hijo('kevin', 'jimenez');
+const hijoPersona = new hijo('jean', 'duque');
 console.log(hijoPersona);
+
+class Person {
+    constructor(
+        protected nombre?: string,
+        protected apellido?: string
+    ) { }
+}
+
+class alumno extends Person {
+    constructor(
+        protected nombre?: string,
+        protected apellido?: string
+    ) {
+        super(nombre, apellido);
+    }
+
+    set setNombre(nombre: string | any) {
+        this.nombre = nombre;
+    }
+    set setApellido(apellido: string | any) {
+        this.apellido = apellido;
+    }
+
+    get getNombre(): string | any {
+        return this.nombre
+    }
+    get getApellido(): string | any {
+        return this.nombre
+    }
+}
+
+const alumnoNuevo: alumno = new alumno();
+alumnoNuevo.setNombre('jean');
+alumnoNuevo.setApellido('');
+alumnoNuevo.getApellido();
+
