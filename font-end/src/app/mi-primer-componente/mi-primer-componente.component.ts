@@ -31,7 +31,7 @@ export class MiPrimerComponenteComponent implements OnInit {
   }
 
   SALUDAR() {
-    alert('holaaaaaa');
+    alert('Hola');
     this.saludoHijo.emit('saludo de tu hijo');
   }
 
