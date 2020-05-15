@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input, Output, EventEmitter } from '@angular/core';
 
 // @NombreDecorador() => decorador
 @Component({
@@ -15,10 +15,19 @@ export class MiPrimerComponenteComponent implements OnInit {
 
   @Output() saludoHijo = new EventEmitter();
 
+  fecha = new Date();
+  sueldo: number = 3.1416;
+  nombre: string = 'jean pierre';
 
   constructor() { }
 
   ngOnInit() {
+    console.log('datos del padre en hijo')
+    console.log(this.datos)
+  }
+  //ngAfterView
+  ngDestroy() {
+
   }
 
   SALUDAR() {

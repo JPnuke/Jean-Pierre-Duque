@@ -17,11 +17,9 @@
   <li>opcion</li>
 </ol>
 
-<app-mi-primer-componente
-[titulo]="tituloPadre"
-[nombreBoton]="nombreBotonPadre"
-[imagenPath]="imagenPadre"
-[datos]="datosHijo"
-(saludoHijo)="obtenerRespuestaHjo($event)"
->
+<app-padre>
+</app-padre>
+
+<app-mi-primer-componente [titulo]="tituloPadre" [nombreBoton]="nombreBotonPadre" [imagenPath]="imagenPadre"
+  [datos]="datosHijo" (saludoHijo)="obtenerRespuestaHjo($event)">
 </app-mi-primer-componente>

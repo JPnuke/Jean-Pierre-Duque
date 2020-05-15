@@ -6,23 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'font-end';
+  title = 'front-end';
 
   tituloPadre = 'soy tu padre hola';
   nombreBotonPadre = 'alertar!!!!!!!!';
-  imagenPadre = 'https://as01.epimg.net/meristation/imagenes/2019/01/08/reportajes/1546933662_826942_1546935400_noticia_normal.jpg';
+  imagenPadre = 'https://as.com/futbol/imagenes/2020/01/27/album/1580109965_448579_1580110002_album_grande.jpg';
 
   datosHijo = {
-  tituloPadre: 'soy tu padre hola',
-  nombreBotonPadre: 'alertar!!!!!!!!',
-  imagenPadre: 'https://as01.epimg.net/meristation/imagenes/2019/01/08/reportajes/1546933662_826942_1546935400_noticia_normal.jpg',
+    tituloPadre: 'soy tu padre hola',
+    nombreBotonPadre: 'alertar!!!!!!!!',
+    imagenPadre: 'https://as.com/futbol/imagenes/2020/01/27/album/1580109965_448579_1580110002_album_grande.jpg',
   };
 
+
   obtenerRespuestaHjo(evento) {
-    console.log(evento);
+    console.log(evento)
   }
 }
-
 
 
 

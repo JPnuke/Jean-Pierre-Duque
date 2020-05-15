@@ -2,8 +2,29 @@
   Jean Pierre Duque
   {{datos.tituloPadre}}
 </h1>
+<h1>
+  PIPES
+</h1>
+<p>
+  objeto(JSON)
+</p>
+{{datos | json}}
+<p>
+  Fecha
+</p>
+{{fecha | date:'yyyy MM dd'}}
+<p>
+  currency
+</p>
+{{sueldo|currency}}
+<br>
+{{nombre | uppercase}}
+<br>
+<br>
+<br>
 <button (click)="SALUDAR()">
-    {{datos.nombreBotonPadre}}
+  {{datos.nombreBotonPadre}}
 </button>
 <br><br><br>
 <img [src]="datos.imagenPadre" alt="">
+
