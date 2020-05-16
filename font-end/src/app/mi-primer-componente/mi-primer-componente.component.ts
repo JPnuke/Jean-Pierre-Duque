@@ -6,7 +6,7 @@ import { Component, OnInit, OnDestroy, Input, Output, EventEmitter } from '@angu
   templateUrl: './mi-primer-componente.component.html',
   styleUrls: ['./mi-primer-componente.component.css']
 })
-export class MiPrimerComponenteComponent implements OnInit {
+export class MiPrimerComponenteComponent implements OnInit, OnDestroy {
 
   @Input() titulo: string;
   @Input() nombreBoton: string;
@@ -22,11 +22,11 @@ export class MiPrimerComponenteComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('datos del padre en hijo')
-    console.log(this.datos)
+    console.log('datos del padre en hijo');
+    console.log(this.datos);
   }
-  //ngAfterView
-  ngDestroy() {
+  /*ngAfterView */
+  ngOnDestroy() {
 
   }
 

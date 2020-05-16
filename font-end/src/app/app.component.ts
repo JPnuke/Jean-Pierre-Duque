@@ -20,7 +20,7 @@ export class AppComponent {
 
 
   obtenerRespuestaHjo(evento) {
-    console.log(evento)
+    console.log(evento);
   }
 }
 
