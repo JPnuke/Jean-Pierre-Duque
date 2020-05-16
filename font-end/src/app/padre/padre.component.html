@@ -7,7 +7,7 @@
     <b><label>Ingrese su año de nacimiento:</label></b>
   </div>
   <div class="col-sm-2">
-    <input type="number" [(ngModel)]="valorDelInput2"autofocus>
+    <input type="number" [(ngModel)]="valorDelInput2" autofocus>
     <div class="col-sm-8"></div>
   </div>
 </div>
@@ -15,9 +15,8 @@
   (resultadoChange)="obtenerResultado($event)" [(resultado)]="res">
 </app-hijo>
 <div class="row">
-<div class="col-sm-2"><b><label>Tu edad es:</label></b></div>
-<div class="col-sm-1"><input type="number" [(ngModel)]="res"readonly></div>
-<div class="col-sm-9"></div>
-
+  <div class="col-sm-2"><b><label>Tu edad es:</label></b></div>
+  <div class="col-sm-1"><input type="number" [(ngModel)]="res" readonly></div>
+  <div class="col-sm-9"></div>
 </div>
 <hr>

@@ -8,7 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class HijoComponent implements OnInit {
 
   @Input() nombreBoton1: string;
-  @Input()resultado: number;
+  @Input() resultado: number;
   @Output() resultadoChange = new EventEmitter();
 
   constructor() { }
@@ -22,7 +22,7 @@ export class HijoComponent implements OnInit {
     alert(this.valorDelPadre);
   }
 
-  calcular(){
+  calcular() {
     this.resultado = 2020 - this.valorDelAnio;
     this.resultadoChange.emit(this.resultado);
   }
