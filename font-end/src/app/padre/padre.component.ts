@@ -15,7 +15,5 @@ export class PadreComponent implements OnInit {
   res: any;
   ngOnInit(): void {
   }
-  obtenerResultado(evento) {
-    console.log(evento);
-  }
+
 }
