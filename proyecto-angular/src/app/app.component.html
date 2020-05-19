@@ -1,30 +1,397 @@
-<div class="container">
+<!--<div class="container">
+  <h1 class="titulo">TITULO </h1>
+  <div class="row" style="background-color: yellow;">FILA <div class="col-sm-12" style="background-color: chocolate;">
+      columna 12 </div>
+    <div class="col-sm-6" style="background-color: green;">columna 6 </div>
+    <div class="col-sm-6" style="background-color: goldenrod;">columna 6 </div>
+    <div class="col-sm-4" style="background-color: rebeccapurple;">columna 4 </div>
+    <div class="col-sm-4" style="background-color: red;">columna 4 </div>
+    <div class="col-sm-4" style="background-color: gray;">columna 4 </div>
+  </div>
+</div>
+<div></div>
+<h1>DIRECTIVAS</h1>
+<h2>angular=>ngIf</h2><button type="button" class="btn btn-outline-success"
+  (click)="eventoClick()">Success</button><br><br>
+<p *ngIf="esconderHola">HOLA</p>
+<<h2>angular => ngfor</h2>
+  {{arregloNumeros}}
+  <li *ngFor="let numero of arregloNumeros">
+    <ul> {{numero.nombre}} </ul>
+  </li>
   <h1>
-    TITULO
+    emmet
   </h1>
+  *3
+  +
+  >
+  .clase
+  <div class="titulo"></div>
 
-  <div class="row" style="background-color: yellow;">
-    FILA
-    <div class="col-sm-12" style="background-color: chocolate;">
-      columna 12
-    </div>
-    <div class="col-sm-6" style="background-color: green;">
-      columna 6
-    </div>
-    <div class="col-sm-6" style="background-color: goldenrod;">
-      columna 6
-    </div>
-    <div class="col-sm-4" style="background-color: rebeccapurple;">
-      columna 4
-    </div>
-    <div class="col-sm-4" style="background-color: red;">
-      columna 4
-    </div>
-    <div class="col-sm-4" style="background-color: gray;">
-      columna 4
-    </div>
+  <div class="row titulo"></div>
+
+  <div class="nombreClase">
   </div>
 
-</div>
-<div>
-</div>
+  <div class="row">
+    <div class="col-sm-12"></div>
+    <div class="col-sm-6"></div>
+    <div class="col-sm-3"></div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12"></div>
+    <div class="col-sm-6"></div>
+    <div class="col-sm-3"></div>
+    <div class="col-sm-3"></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div>
+
+  </div> -->
+
+<body>
+
+  <div class="rowheader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h1>
+            <a class="navbar-brand" href="https://www.gamulator.com/es/" target="_blank" title="Gamulator">
+              <img src="https://www.gamulator.com/img/logo.png" alt="">
+            </a>
+          </h1>
+        </div>
+        <div class="col-sm-9">
+          <div class="col-sm-2" style="float:right; padding-top: 15px;">
+            <select class="custom-select my-2 my-lg-0">
+              <option value="">English</option>
+              <option value="" selected="">Español</option>
+              <option value="">Français</option>
+              <option value="">Português</option>
+            </select>
+          </div>
+          <form action="" class="form-inline my-2 my-lg-0 desno" style="float:right; padding-top: 15px;">
+            <input name="search_term_string" required="" class="form-control mr-sm-2" type="search" placeholder="Buscar"
+              aria-label="Search">
+            <button type="button" class="btn btn-outline-light">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="navbarcontent">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href=""><img class="menu-slika"
+                    src="https://www.gamulator.com/img/icons/pacman-icon.png" alt="homepage">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <img class="menu-slika" src="https://www.gamulator.com/img/icons/console-icon.png" width="30"
+                    height="30" alt="emuladores">Emuladores
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">Emulador de Mame</a>
+                  <a class="dropdown-item" href="">Emulador de GBA</a>
+                  <a class="dropdown-item" href="">Emulador de PSP</a>
+                  <a class="dropdown-item" href="">Emulador de PS1</a>
+                  <a class="dropdown-item" href="">Emulador de PS2</a>
+                  <a class="dropdown-item" href="">Emulador de NES</a>
+                  <a class="dropdown-item" href="">Emulador de SNES</a>
+                  <a class="dropdown-item" href="">Emulador de N64</a>
+                  <a class="dropdown-item" href="">Emulador de NDS</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="">Ver Todos los Emuladores »</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <img class="menu-slika" src="https://www.gamulator.com/img/icons/roms-icon.png" width="30" height="30"
+                    alt="roms">Roms
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">Juegos de Mame</a>
+                  <a class="dropdown-item" href="">Juegos de GameBoy</a>
+                  <a class="dropdown-item" href="">Juegos de GBA</a>
+                  <a class="dropdown-item" href="">Juegos de GameBoy Color</a>
+                  <a class="dropdown-item" href="">Juegos de Virtual Boy</a>
+                  <a class="dropdown-item" href="">Juegos de NES</a>
+                  <a class="dropdown-item" href="">Juegos de SNES</a>
+                  <a class="dropdown-item" href="">Juegos de N64</a>
+                  <a class="dropdown-item" href="">Juegos de NDS</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="">Ver Todos los ROMs »</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""><img class="menu-slika"
+                    src="https://www.gamulator.com/img/icons/tetris-icon.png" alt="tags">Etiquetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""><img class="menu-slika"
+                    src="https://www.gamulator.com/img/icons/maze-icon.png" alt="blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""><img class="menu-slika"
+                    src="https://www.gamulator.com/img/icons/potion-icon.png" alt="contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <hr class="new1">
+
+    <div class="row">
+      <div class="title">
+        <h2>Emuladores Favoritos</h2>
+      </div>
+      <div class="row n1">
+        <div class="col-sm-3">
+          <img class="img-fluid centrerinaslika" src="https://www.gamulator.com/img/emulators/drastic.jpg" alt=""
+            style="width:auto;">
+          <h3 class="centarce" style="font-family: OpenSans!important;
+          text-align: center;">DraStic</h3>
+          <div class="centarce" style="font-family: OpenSans!important;
+        text-align: left;">38752 Descargas totales
+            <a href="" class="btn btn-primary" role="button" style="float:right;">Ver</a></div>
+        </div>
+        <div class="col-sm-3">
+          <img class="img-fluid centrerinaslika"
+            src="https://www.gamulator.com/img/emulators/NDS-emulator-for-Android.jpg" alt="" style="width:auto;">
+          <h3 class="centarce" style="font-family: OpenSans!important;
+        text-align: center;">NDS Emulator for Android</h3>
+          <div class="centarce" style="font-family: OpenSans!important;
+      text-align: left;">27319 Descargas totales
+            <a href="" class="btn btn-primary" role="button" style="float:right;">Ver</a></div>
+        </div>
+        <div class="col-sm-3">
+          <img class="img-fluid centrerinaslika" src="https://www.gamulator.com/img/emulators/desmume.jpg" alt=""
+            style="width:auto;">
+          <h3 class="centarce" style="font-family: OpenSans!important;
+      text-align: center;">DeSmuME</h3>
+          <div class="centarce" style="font-family: OpenSans!important;
+    text-align: left;">24699 Descargas totales
+            <a href="" class="btn btn-primary" role="button" style="float:right;">Ver</a></div>
+        </div>
+        <div class="col-sm-3">
+          <img class="img-fluid centrerinaslika" src="https://www.gamulator.com/img/emulators/tiger-arcade.jpg" alt=""
+            style="width:auto;">
+          <h3 class="centarce" style="font-family: OpenSans!important;
+      text-align: center;">Tiger Arcade</h3>
+          <div class="centarce" style="font-family: OpenSans!important;
+    text-align: left;">22406 Descargas totales
+            <a href="" class="btn btn-primary" role="button" style="float:right;">Ver</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="row n1">
+      <div class="title">
+        <h2>ROMs Más Descargadas</h2>
+      </div>
+      <div class="col-sm-3">
+        <img class="img-fluid centrerinaslika" src="https://www.gamulator.com/img/roms/thumbs/super-mario-64-thumb.jpg"
+          style="width:auto;">
+        <h5 class="card-title" style="font-family: OpenSans!important;
+              text-align: center;"><a href="">Super Mario 64</a></h5>
+        <div class="opis">222452 descargas / Clasificación <span class="zelena"> 65%</span>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <img class="img-fluid centrerinaslika"
+          src="https://www.gamulator.com/img/roms/thumbs/pokemon-heart-gold-version-thumb.jpg" style="width:auto;">
+        <h5 class="card-title" style="font-family: OpenSans!important;
+              text-align: center;"><a href="">Pokemon HeartGold</a></h5>
+        <div class="opis">199846 descargas / Clasificación <span class="zelena"> 71%</span>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <img class="img-fluid centrerinaslika" src="https://www.gamulator.com/img/roms/thumbs/mario-kart-64-thumb.jpg"
+          style="width:auto;">
+        <h5 class="card-title" style="font-family: OpenSans!important;
+              text-align: center;"><a href="">Mario Kart 64</a></h5>
+        <div class="opis">173690 descargas / Clasificación <span class="zelena"> 65%</span>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <img class="img-fluid centrerinaslika"
+          src="https://www.gamulator.com/img/roms/thumbs/Super-Smash-Bros-64-thumb.jpg" style="width:auto;">
+        <h5 class="card-title" style="font-family: OpenSans!important;
+            text-align: center;"><a href="">Super Smash Bros.</a></h5>
+        <div class="opis">164128 descargas / Clasificación <span class="zelena"> 70%</span>
+        </div>
+      </div>
+    </div>
+    <div class="row n1">
+      <div class="col-sm-3">
+        <img class="img-fluid centrerinaslika"
+          src="https://www.gamulator.com/img/roms/thumbs/pokemon-black-version-2-thumb.jpg" style="width:auto;">
+        <h5 class="card-title" style="font-family: OpenSans!important;
+              text-align: center;"><a href="">Pokemon Black Version 2</a></h5>
+        <div class="opis">125533 descargas / Clasificación <span class="zelena"> 66%</span>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <img class="img-fluid centrerinaslika"
+          src="https://www.gamulator.com/img/roms/thumbs/pokemon-platinum-version-thumb.jpg" style="width:auto;">
+        <h5 class="card-title" style="font-family: OpenSans!important;
+              text-align: center;"><a href="">Pokemon Platinum</a></h5>
+        <div class="opis">103972 descargas / Clasificación <span class="zelena"> 72%</span>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <img class="img-fluid centrerinaslika"
+          src="https://www.gamulator.com/img/roms/thumbs/new-super-mario-bros-nintendo-ds-thumb.jpg"
+          style="width:auto;">
+        <h5 class="card-title" style="font-family: OpenSans!important;
+              text-align: center;"><a href="">New Super Mario Bros.</a></h5>
+        <div class="opis">96090 descargas / Clasificación <span class="zelena"> 78%</span>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <img class="img-fluid centrerinaslika"
+          src="https://www.gamulator.com/img/roms/thumbs/legend-of-zelda-the-ocarina-of-time-thumb.jpg"
+          style="width:auto;">
+        <h5 class="card-title" style="font-family: OpenSans!important;
+            text-align: center;"><a href="">The Legend of Zelda: Ocarina of Time</a></h5>
+        <div class="opis">95722 descargas / Clasificación <span class="zelena"> 70%</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="row n1">
+      <div class="title">
+        <h2>Mejores Consolas</h2>
+      </div>
+      <div class="col-sm-3">
+        <img class="img-fluid centrerinaslika" src="https://www.gamulator.com/img/consoles/nintendo-ds.png" alt=""
+          style="width:auto;">
+        <h3 class="centarce" style="font-family: OpenSans!important;
+        text-align: center;">NDS</h3>
+        <div class="centarce" style="font-family: OpenSans!important;
+      text-align: left;">
+          <div>
+            <a href="" class="btn btn-primary" role="button" style="float:right;">Ver</a>
+            <div>12 Emuladores</div>
+            <div>48930 Descargas Totales</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <img class="img-fluid centrerinaslika" src="https://www.gamulator.com/img/consoles/mame.png" alt=""
+          style="width:auto;">
+        <h3 class="centarce" style="font-family: OpenSans!important;
+        text-align: center;">Mame</h3>
+        <div class="centarce" style="font-family: OpenSans!important;
+      text-align: left;">
+          <div>
+            <a href="" class="btn btn-primary" role="button" style="float:right;">Ver</a>
+            <div>7 Emuladores</div>
+            <div>50858 Descargas Totales</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <img class="img-fluid centrerinaslika" src="https://www.gamulator.com/img/consoles/nintendo-64.png" alt=""
+          style="width:auto;">
+        <h3 class="centarce" style="font-family: OpenSans!important;
+        text-align: center;">N64</h3>
+        <div class="centarce" style="font-family: OpenSans!important;
+      text-align: left;">
+          <div>
+            <a href="" class="btn btn-primary" role="button" style="float:right;">Ver</a>
+            <div>12 Emuladores</div>
+            <div>48930 Descargas Totales</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <img class="img-fluid centrerinaslika" src="https://www.gamulator.com/img/consoles/psx.png" alt=""
+          style="width:auto;">
+        <h3 class="centarce" style="font-family: OpenSans!important;
+        text-align: center;">PSX</h3>
+        <div class="centarce" style="font-family: OpenSans!important;
+      text-align: left;">
+          <div>
+            <a href="" class="btn btn-primary" role="button" style="float:right;">Ver</a>
+            <div>19 Emuladores</div>
+            <div>36295 Descargas Totales
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <div class="container-fluid">
+    <div class="row padinzi-gore-dole footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9 col-md-9 col-lg-9">
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <h4>Descargas</h4>
+                <ul class="list-unstyled">
+                  <li><a href="" style="color:white">Roms</a></li>
+                  <li><a href="" style="color:white">Emuladores</a></li>
+                  <li><a href="" style="color:white">Bios Archivos</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <h4>Importante</h4>
+                <ul class="list-unstyled">
+                  <li><a href="" style="color:white">Contacto</a></li>
+                  <li>Como a</li>
+                  <li>Manuales de juego</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <div><img src="https://www.gamulator.com/img/logo.png" alt="gamulator logo"></div>
+            <div class="ulinija">
+              <a class="ikonka" href="https://www.facebook.com/gamulator/" style="color:white"><img
+                  src="https://www.gamulator.com/img/icons/facebook-icon.png" alt="Gamulator en Facebook"></a>
+              <a class="ikonka" href="https://twitter.com/Gamulator1" style="color:white"><img
+                  src="https://www.gamulator.com/img/icons/twitter-icon.png" alt="Gamulator en Twitter"></a>
+            </div>
+          </div>
+          <div class="col-12 copyright centrirano centertext" style="text-align: center;">
+            <a href="" style="color:white">Inicio</a> | <a href="/es/politica-de-privacidad"
+              style="color:white">Política de Privacidad</a> | <a href="" style="color:white">Términos de Servicio</a> |
+            <a href="/es/renuncia" style="color:white">Legal / DMCA</a> | <a href="" style="color:white">Mapa del
+              Sitio</a>
+          </div>
+          <div class="col-12 copyright centrirano centertext" style="text-align: center;">
+            Copyright Gamulator © 2020. Todos los derechos reservados.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
