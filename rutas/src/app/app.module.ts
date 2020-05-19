@@ -1,12 +1,13 @@
-import { AppRoutesComponent } from './app.routes';
+import { PokemonModule } from './pokemon/pokemon.module';
+import { UsuarioModule } from './usuario/usuario.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './inicio/home/home.component';
 import { NoEncontradoComponent } from './inicio/no-encontrado/no-encontrado.component';
+import { AppRoutesComponent } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -17,10 +18,12 @@ import { NoEncontradoComponent } from './inicio/no-encontrado/no-encontrado.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AppRoutesComponent
+    AppRoutesComponent,
+    UsuarioModule,
+    PokemonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

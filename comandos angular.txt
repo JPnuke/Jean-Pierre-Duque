@@ -4,3 +4,4 @@ cd my-dream-app
 ng serve
 
 ng generate component nombre-del-componente
+ng g c --routing
